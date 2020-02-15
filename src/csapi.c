@@ -2,6 +2,7 @@
 #include "fmgr.h"
 #include "miscadmin.h"
 #include "optimizer/paths.h"
+#include "include/hooks.h"
 
 
 #ifdef PG_MODULE_MAGIC
@@ -12,12 +13,6 @@ PG_MODULE_MAGIC;
 extern void _PG_init(void);
 extern void _PG_fini(void);
 set_rel_pathlist_hook_type prev_set_rel_pathlist_hook_type;
-
-
-static void csapi_rel_pathlist_hook (PlannerInfo *root, RelOptInfo *rel, Index rti, RangeTblEntry *rte)
-{
-
-}
 
 
 void _PG_init(void)
