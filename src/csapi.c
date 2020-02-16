@@ -12,7 +12,6 @@ PG_MODULE_MAGIC;
 
 extern void _PG_init(void);
 extern void _PG_fini(void);
-set_rel_pathlist_hook_type prev_set_rel_pathlist_hook_type;
 
 
 void _PG_init(void)

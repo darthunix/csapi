@@ -2,7 +2,7 @@ EXTENSION = csapi
 MODULES = csapi
 DATA = csapi--0.1.sql
 
-OBJS = src/csapi.o src/hooks.o
+OBJS = src/csapi.o src/hooks.o src/cscan.o
 
 ifdef USE_PGXS
 override PG_CPPFLAGS += -I$(CURDIR)/src/include
