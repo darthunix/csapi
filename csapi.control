@@ -1,4 +1,0 @@
-comment = 'csapi'
-default_version = '0.1'
-module_pathname = '$libdir/csapi'
-relocatable = true
